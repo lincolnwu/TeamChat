@@ -670,6 +670,10 @@ body {
   border-bottom-right-radius: 16px;
 
   padding: 0px 10px;
+  /* position: fixed; 
+    background:gray; 
+    width:100%;
+    bottom:0; */
 }
 
 .create-channel__button-wrapper p {
@@ -687,6 +691,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding-bottom: 50px;
+  clear: both;
+  overflow: auto;
 }
 
 .user-list__header {

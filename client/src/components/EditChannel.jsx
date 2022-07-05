@@ -14,8 +14,10 @@ const ChannelNameInput = ({ channelName = '', setChannelName }) => {
     return (
         <div className="channel-name-input__wrapper">
             <p>Name</p>
-            <input value={channelName} onChange={handleChange} placeholder="channel-name" />
+            
+            <input value={channelName} onChange={handleChange} placeholder="channel-name" required/>
             <p>Add Members</p>
+            
         </div>
         
     )
@@ -59,6 +61,7 @@ const EditChannel = ({ setIsEditing }) => {
     }
 
     return (
+        <div className="channel__container">
         <div className="edit-channel__container">
             <div className="edit-channel__header">
                 <p>Edit Channel</p>
@@ -69,6 +72,7 @@ const EditChannel = ({ setIsEditing }) => {
             <div className="edit-channel__button-wrapper" onClick={updateChannel}>
                 <p>Save Changes</p>
             </div>
+        </div>
         </div>
     )
 }

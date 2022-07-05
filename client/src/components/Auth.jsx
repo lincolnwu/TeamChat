@@ -47,11 +47,11 @@ const Auth = () => {
 
         // fourth, set the base URL
         // specify the URL the request is made to
-        const URL = 'http://localhost:5000/auth';
+        const URL = 'https://team-chat-app1.herokuapp.com/auth';
 
         // fifth, make the appropriate request to the backend URL depending on signup/login 
         // sixth, pass all the form data and get the token, userId, hashedPassword back from the backend
-        
+            
         // make axios call, plus whether it's a signup or login
         // we pass the data from the front end to backend
         // but we also destructure to get data back from it (use these to add to browser cookies)
